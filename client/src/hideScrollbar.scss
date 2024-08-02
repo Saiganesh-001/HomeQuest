@@ -1,0 +1,32 @@
+/* Mixin for custom scrollbar */
+@mixin fancy-scrollbar {
+    /* Scrollbar container */
+    &::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+  
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 6px;
+    }
+  
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 6px;
+    }
+  
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+  
+  /* Apply the mixin to the element */
+  .element {
+    overflow: auto;
+    @include fancy-scrollbar;
+  }
+  
