@@ -44,6 +44,8 @@
       border: none;
       padding: 0px 10px;
       width: 200px;
+      padding: 20px;
+      border: 1px solid #999;
 
       @include lg {
         padding: 0px 5px;
@@ -67,8 +69,6 @@
         &:nth-child(3) {
           width: auto;
         }
-        padding: 20px;
-        border: 1px solid #999;
       }
     }
 
